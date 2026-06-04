@@ -31,7 +31,7 @@ jobs:
 
       - name: Sync Web Code into Capacitor Android
         run: |
-          npx cap init "My Android App" "com.yourname.myapp" --web-dir=www
+          npx cap init "My Android App" "com.yourname.myapp" --web-dir=dist
           npx cap add android
           npx cap sync
 
