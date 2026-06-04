@@ -1,1 +1,6 @@
-export default function App() { return <h1>hello android app</h1>; }
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: 'www' // Essential for Capacitor to find your build files
+  }
+})
